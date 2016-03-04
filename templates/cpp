@@ -1,0 +1,95 @@
+/* Author : Anurag El Dorado */
+
+/* Libraries */
+#include <bits/stdc++.h>
+#include <time.h>
+#include <math.h>
+using namespace std;
+
+//MACRO DEFINITIONS
+/* Data Types */
+#define lli long long int
+#define llu unsigned long long int
+
+/* Input */
+#define sd(var) scanf("%d", &var);
+
+/* Output */
+#define pd(var) printf("%d", var);
+#define print_arr(a, n) cout << #a << " : "; for (int I = 0; I < n; I++) { cout << a[I] << " "; } cout << endl;	//Array till n elements
+#define print_v(v) 	cout << #v << " : "; for (long long int I = 0; I != v.size(); I++) { cout << v[I] << " "; } cout << endl;	//Vector
+#define p2d(a, r, c) cout << #a << endl; for (int I = 0; I < r; I++) {	for (int J = 0; J < c; J++) {	cout << a[I][J] << " ";	} cout << endl;	} cout << endl;
+
+/* File Input */
+#define FILE_INPUT freopen("input.txt", "r", stdin);
+
+/* File Output */
+#define FILE_OUTPUT freopen("output.txt", "w", stdout);
+
+/* Output and Debugging */
+#define error(args...) { vector<string> _v = split(#args, ','); err(_v.begin(), args); }	cout << endl;
+
+/* MOD  value*/
+#define MOD 1000000007
+
+/* Timing */
+#define TIMEIT cout << "TIME VARIABLE REINITIALISED\n"; clock_t start_time_ = clock();
+#define TIMEUP cout << "Time: " << (clock() - start_time_) / (double)(CLOCKS_PER_SEC) << "s" << endl;
+
+/* to print varargs */
+#define error(args...) { vector<string> _v = split(#args, ','); err(_v.begin(), args); }	cout << endl;
+
+vector<string> split(const string& s, char c) {
+	vector<string> v;
+	stringstream ss(s);
+	string x;
+	while (getline(ss, x, c))
+		v.emplace_back(x);
+	return move(v);
+}
+
+void err(vector<string>::iterator it) {}
+template<typename T, typename... Args>
+void err(vector<string>::iterator it, T a, Args... args) {
+	cerr << it -> substr((*it)[0] == ' ', it -> length()) << " = " << a << '\t';
+	err(++it, args...);
+}
+
+int main() {
+
+	int i, j, k;
+	int count, sum;
+	int n, m, p, t;
+	vector<int> v;
+	int maxi, mini;
+	int tc;
+	string s, r;
+	int lens, lenr;
+	
+//	lli i, j, k;
+//	lli count, sum;
+//	lli n, m, p, t;
+//	vector<lli> v;
+//	lli maxi, mini;
+//	lli tc;
+//	string s, r;
+//	lli lens, lenr;
+
+	FILE_INPUT;
+	
+	cin >> tc;
+	
+	while (tc--) {
+		cin >> n;
+		int a[n];
+		  
+		for (i = 0; i < n; i++) {
+			cin >> a[i];
+		}
+
+	}
+
+	return 0;
+}
+
+
