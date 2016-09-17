@@ -16,7 +16,7 @@ using namespace std;
 
 /* Output */
 #define pd(var) printf("%d", var);
-#define print_arr(a, n) cout << #a << " : "; for (int I = 0; I < n; I++) { cout << a[I] << " "; } cout << endl;	//Array till n elements
+#define print_a(a, n) cout << #a << " : "; for (int I = 0; I < n; I++) { cout << a[I] << " "; } cout << endl;	//Array till n elements
 #define print_v(v) 	cout << #v << " : "; for (long long int I = 0; I != v.size(); I++) { cout << v[I] << " "; } cout << endl;	//Vector
 #define p2d(a, r, c) cout << #a << endl; for (int I = 0; I < r; I++) {	for (int J = 0; J < c; J++) {	cout << a[I][J] << " ";	} cout << endl;	} cout << endl;
 
@@ -35,6 +35,8 @@ using namespace std;
 /* Timing */
 #define TIMEIT cout << "TIME VARIABLE REINITIALISED\n"; clock_t start_time_ = clock();
 #define TIMEUP cout << "Time: " << (clock() - start_time_) / (double)(CLOCKS_PER_SEC) << "s" << endl;
+
+#define ODD(n) (n % 2)
 
 /* to print varargs */
 #define error(args...) { vector<string> _v = split(#args, ','); err(_v.begin(), args); }	cout << endl;

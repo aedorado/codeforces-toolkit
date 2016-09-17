@@ -10,5 +10,6 @@ ext = ext.strip()
 if not os.path.exists('contest/' + contest_id):
 	os.mkdir('contest/' + contest_id)
 
+open('contest/' + contest_id + '/input', 'w')
 for filename in range(ord('A'), ord('F')):
 	shutil.copy('templates/' + ext, 'contest/' + contest_id + '/' + contest_id + chr(filename) + '.' + ext)
